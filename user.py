@@ -19,3 +19,10 @@ class User:
 		Function to save user
 		'''
 		User.user_list.append(self)
+
+
+	 def delete_user_credentials(self):
+	  '''
+	  delete_user method deletes a saved user from the user_list
+	  '''
+	  User.user_user.remove(self)
