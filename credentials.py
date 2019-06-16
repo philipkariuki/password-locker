@@ -1,3 +1,5 @@
+import random
+
 class Credentials:
 	"""
 		Class that generates new instances of user.
@@ -16,6 +18,9 @@ class Credentials:
 
 	def save_credentials(self):
 		'''
-		Function to save user
+		Function to save new user credentials
 		'''
 		User.credentials_list.append(self)
+
+
+	def show_credentials
