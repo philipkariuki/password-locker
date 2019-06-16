@@ -61,3 +61,13 @@ def show_credentials(cls,user_name):
 		if credential.user_name == user_name:
 			user_credentials_list.append(credential)
 	return user_credentials_list
+
+@classmethod
+  def delete_credentials(cls, name):
+  '''
+  deletes an account's saved credentials from the credentials_list.
+  '''
+  for account in cls.credentials_list:
+      if account.account_name == name:
+          Credentials.credentials_list.remove(account)
+
