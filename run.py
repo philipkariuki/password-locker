@@ -1,4 +1,5 @@
-from user import User # Importing the contact class
+from user import User # Importing the user class
+from credentials import Credentials # Importing credentials class
 
 def create_user(first_name,last_name,email,password):
 	"""
