@@ -39,3 +39,6 @@ def save_credential(credential):
 
 	Credential.save_credentials(credential)
 
+
+def show_credentials(user_name):
+	return Credential.show_credentials(user_name)
