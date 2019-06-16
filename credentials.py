@@ -9,7 +9,7 @@ class Credentials:
 # defining variables
 	credentials_list = [] # Empty credentials list
 
-	
+	user_credentials_list = []  # Empty list of credentials created
 
 
 def __init__(self,user_name,site_name,account_username,password):
@@ -26,7 +26,7 @@ def __init__(self,user_name,site_name,account_username,password):
 @classmethod
 	def check_user(cls,first_name,password):
 		'''
-		Method that checks if the name and password entered match entries in the users_list
+		Checks if name and password entered match entries in the users_list
 		'''
 		current_user = ''
 		for user in User.users_list:
@@ -45,8 +45,19 @@ def save_credentials(self):
 
 
 
-def randomStrongPassword(stringLength=8):
+def genRandomStrongPassword(stringLength=8):
   """Generate a random string of letters, digits and special characters """
   password_characters = string.ascii_letters + string.digits + string.punctuation
   return ''.join(random.choice(password_characters) for i in range(stringLength))
 
+
+
+@classmethod
+def show_credentials(cls,user_name):
+	'''
+	Displays list of saved credentials
+	'''	
+	for credential in cls.credentials_list:
+		if credential.user_name == user_name:
+			user_credentials_list.append(credential)
+	return user_credentials_list
