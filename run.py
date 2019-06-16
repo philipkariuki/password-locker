@@ -29,3 +29,9 @@ def generate_password():
 	gen_pass = Credential.genRandomStrongPassword()
 	return gen_pass
 
+
+def create_credential(user_name,site_name,account_user_name,password):
+
+	new_credential=Credential(user_name,site_name,account_user_name,password)
+	return new_credential
+
