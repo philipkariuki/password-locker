@@ -24,3 +24,8 @@ def userVerify(first_name,password):
 	return checks_user
 
 
+def generate_password():
+
+	gen_pass = Credential.genRandomStrongPassword()
+	return gen_pass
+
