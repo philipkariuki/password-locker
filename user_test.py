@@ -35,5 +35,24 @@ class TestUser(unittest.TestCase):
 		self.new_contact.save_user()
 		self.assertEqual(len(User.user_list),1)
 
+
+	# def test_check_user(self):
+	# 	'''
+	# 	Function to test whether the login in function check_user works as expected
+	# 	'''
+	# 	self.new_contact = User('Philip','Kariuki','philipkariuki@gmail.com','11223344')
+	# 	self.new_contact.save_user()
+	# 	user2 = User('Philip','Kariuki','philipkariuki@gmail.com','11223344')
+	# 	user2.save_user()
+
+	# 	for user in User.user_list:
+	# 		if user.first_name == user2.first_name and user.password == user2.password:
+	# 			current_user = user.first_name
+	# 	return current_user
+
+	# 	self.assertEqual(current_user,User.check_user(user2.password,user2.first_name))
+
+
+
 if __name__ == '__main__':
 	unittest.main()
