@@ -26,8 +26,8 @@ def userVerify(first_name,password):
 
 def generate_password():
 
-	gen_pass = Credentials.genRandomStrongPassword()
-	return gen_pass
+	genPass = Credentials.genRandomStrongPassword()
+	return genPass
 
 
 def create_credential(user_name,site_name,account_user_name,password):
@@ -42,3 +42,4 @@ def save_credential(credential):
 
 def show_credentials(user_name):
 	return Credentials.show_credentials(user_name)
+

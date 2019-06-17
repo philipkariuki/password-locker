@@ -24,16 +24,16 @@ class User:
 
 
 
-	@classmethod
-	def check_user(cls,first_name,password):
-		'''
-		Checks if name and password entered match entries in the users_list
-		'''
-		current_user = ''
-		for user in cls.user_list:
-			if (user.first_name == first_name and user.password == password):
-				current_user = user.first_name
-		return current_user
+	# @classmethod
+	# def check_user(cls,first_name,password):
+	# 	'''
+	# 	Checks if name and password entered match entries in the users_list
+	# 	'''
+	# 	current_user = ''
+	# 	for user in cls.user_list:
+	# 		if (user.first_name == first_name and user.password == password):
+	# 			current_user = user.first_name
+	# 	return current_user
 
 
 

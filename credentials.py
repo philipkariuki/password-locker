@@ -1,9 +1,9 @@
 import random
 import string
-# from user import User # Importing the user class
+from user import User # Importing the user class
 
 
-global users_list
+global user_list
 class Credentials:
 	"""
 		Class that generates new instances of user.
@@ -23,6 +23,19 @@ class Credentials:
 			self.site_name = site_name
 			self.account_username = account_username
 			self.password = password
+
+
+	@classmethod
+	def check_user(cls,first_name,password):
+		'''
+		Checks if name and password entered match entries in the users_list
+		'''
+		current_user = ''
+		for user in User.user_list:
+			if (user.first_name == first_name and user.password == password):
+				current_user = user.first_name
+		return current_user
+
 
 
 	def save_credentials(self):
