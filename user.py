@@ -22,7 +22,9 @@ class User:
 		'''
 		User.user_list.append(self)
 
-
+	@classmethod
+	def display_users(cls):
+		return cls.user_list
 
 	# @classmethod
 	# def check_user(cls,first_name,password):

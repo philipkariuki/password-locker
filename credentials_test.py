@@ -10,10 +10,10 @@ class TestCredentials(unittest.TestCase):
 	'''
 	
     def setUp(self):
-		'''
-		Creates an account's credentials before each test
-		'''
-		self.new_credential = Credential('Philip','Twitter','philippo','32541235')
+    '''
+    Creates an account's credentials before each test
+    '''
+    self.new_credential = Credential('Philip','Twitter','philippo','32541235')
 
     
     def test__init__(self):
