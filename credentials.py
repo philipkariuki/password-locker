@@ -30,7 +30,7 @@ class Credentials:
 		Checks if name and password entered match entries in the users_list
 		'''
 		current_user = ''
-		for user in User.users_list:
+		for user in User.user_list:
 			if (user.first_name == first_name and user.password == password):
 				current_user = user.first_name
 		return current_user
@@ -47,9 +47,9 @@ class Credentials:
 
 
 	def genRandomStrongPassword(stringLength=8):
-	"""Generate a random string of letters, digits and special characters """
-	password_characters = string.ascii_letters + string.digits + string.punctuation
-	return ''.join(random.choice(password_characters) for i in range(stringLength))
+		"""Generate a random string of letters, digits and special characters """
+		password_characters = string.ascii_letters + string.digits + string.punctuation
+		return ''.join(random.choice(password_characters) for i in range(stringLength))
 
 
 
@@ -58,6 +58,7 @@ class Credentials:
 		'''
 		Displays list of saved credentials
 		'''	
+		user_credentials_list = []
 		for credential in cls.credentials_list:
 			if credential.user_name == user_name:
 				user_credentials_list.append(credential)
