@@ -62,7 +62,22 @@ def main():
 				print ('x' * 100)
 				break
 		
-		
+		elif short_code == "nac":
+				print("Sign Up")
+				print('=' * 30)
+				user_name = input("User Name: ")
+				password = input("Password: ")
+				account_username =input("Account Username: ")
+				email = input("Email: ")
+				
+				save_user(create_user(user_name,password,account_username,email))
+				print('\n')
+				
+				print(f"Hello,{user_name} your account has been created. Your password is {password}")
+				print('\n')
+				print('=' * 30)
+				
+			
 		else:
 			print("Please use a valid short code")
 
