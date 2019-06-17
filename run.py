@@ -48,3 +48,12 @@ def display_users():
 
 
 
+# Main
+def main():
+	print(' ')
+	print("Wilkommen To Password Locker ")
+
+
+
+if __name__ == '__main__':
+	main()
