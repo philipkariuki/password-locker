@@ -41,7 +41,7 @@ class Credentials:
 		'''
 		Function to save new user credentials
 		'''
-		User.credentials_list.append(self)
+		Credentials.credentials_list.append(self)
 
 
 
