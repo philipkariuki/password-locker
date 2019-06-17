@@ -24,15 +24,15 @@ def __init__(self,user_name,site_name,account_username,password):
 
 
 @classmethod
-	def check_user(cls,first_name,password):
-		'''
-		Checks if name and password entered match entries in the users_list
-		'''
-		current_user = ''
-		for user in User.users_list:
-			if (user.first_name == first_name and user.password == password):
-				current_user = user.first_name
-		return current_user
+def check_user(cls,first_name,password):
+	'''
+	Checks if name and password entered match entries in the users_list
+	'''
+	current_user = ''
+	for user in User.users_list:
+		if (user.first_name == first_name and user.password == password):
+			current_user = user.first_name
+	return current_user
 
 
 
@@ -63,11 +63,11 @@ def show_credentials(cls,user_name):
 	return user_credentials_list
 
 @classmethod
-  def delete_credentials(cls, name):
-  '''
-  deletes an account's saved credentials from the credentials_list.
-  '''
-  for account in cls.credentials_list:
-      if account.account_name == name:
-          Credentials.credentials_list.remove(account)
+def delete_credentials(cls, name):
+'''
+deletes an account's saved credentials from the credentials_list.
+'''
+for account in cls.credentials_list:
+	if account.account_name == name:
+		Credentials.credentials_list.remove(account)
 
