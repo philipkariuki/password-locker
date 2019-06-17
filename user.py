@@ -1,5 +1,4 @@
 # from credentials import Credentials
-global users_list
 
 class User:
 	"""
