@@ -1,4 +1,5 @@
-from credentials import Credentials
+# from credentials import Credentials
+global users_list
 
 class User:
 	"""
@@ -21,6 +22,20 @@ class User:
 		Function to save user
 		'''
 		User.user_list.append(self)
+
+
+
+	@classmethod
+	def check_user(cls,first_name,password):
+		'''
+		Checks if name and password entered match entries in the users_list
+		'''
+		current_user = ''
+		for user in cls.user_list:
+			if (user.first_name == first_name and user.password == password):
+				current_user = user.first_name
+		return current_user
+
 
 
 	# def delete_user_credentials(self):
