@@ -1,3 +1,3 @@
 import unittest
-from credentials import credentials
+from credentials import Credentials
 

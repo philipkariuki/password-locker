@@ -1,5 +1,6 @@
 import random
 import string
+from user import User # Importing the user class
 
 class Credentials:
 	"""
@@ -7,9 +8,9 @@ class Credentials:
 	"""
 
 # defining variables
-	credentials_list = [] # Empty credentials list
+credentials_list = [] # Empty credentials list
 
-	user_credentials_list = []  # Empty list of credentials created
+user_credentials_list = []  # Empty list of credentials created
 
 
 def __init__(self,user_name,site_name,account_username,password):
@@ -64,10 +65,10 @@ def show_credentials(cls,user_name):
 
 @classmethod
 def delete_credentials(cls, name):
-'''
-deletes an account's saved credentials from the credentials_list.
-'''
-for account in cls.credentials_list:
-	if account.account_name == name:
-		Credentials.credentials_list.remove(account)
+	'''
+	deletes an account's saved credentials from the credentials_list.
+	'''
+	for account in cls.credentials_list:
+		if account.account_name == name:
+			Credentials.credentials_list.remove(account)
 
