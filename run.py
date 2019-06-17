@@ -52,12 +52,20 @@ def display_users():
 def main():
 	print(' ')
 	print("Wilkommen To Password Locker ")
-
+	while True:
 		print('='* 100)  
 		short_code = input("Use these to navigate: nac- create a new user account, lg - login into your existing account, dis - show list of created accounts, qt - exit from password locker \n").lower().strip()
 		print('='* 100)
 		
+		if short_code == "qt":
+				print("Ciao! (^ Q ^)/゛ ")
+				print ('x' * 100)
+				break
 		
+		
+		else:
+			print("Please use a valid short code")
+
 
 if __name__ == '__main__':
 	main()
