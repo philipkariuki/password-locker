@@ -17,7 +17,6 @@ class Credentials:
 
 	def __init__(self,user_name,site_name,account_username,password):
 
-		# docstring removed for simplicity
 
 			self.user_name = user_name
 			self.site_name = site_name
@@ -28,7 +27,7 @@ class Credentials:
 	@classmethod
 	def check_user(cls,first_name,password):
 		'''
-		Checks if name and password entered match entries in the users_list
+		Checks if user exists
 		'''
 		current_user = ''
 		for user in User.user_list:
@@ -65,12 +64,14 @@ class Credentials:
 				user_credentials_list.append(credential)
 		return user_credentials_list
 
-	@classmethod
-	def delete_credentials(cls, name):
-		'''
-		deletes an account's saved credentials from the credentials_list.
-		'''
-		for account in cls.credentials_list:
-			if account.account_name == name:
-				Credentials.credentials_list.remove(account)
+
+
+	# @classmethod
+	# def delete_credentials(cls, name):
+	# 	'''
+	# 	deletes an account's saved credentials from the credentials_list.
+	# 	'''
+	# 	for account in cls.credentials_list:
+	# 		if account.account_name == name:
+	# 			Credentials.credentials_list.remove(account)
 
