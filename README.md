@@ -17,7 +17,7 @@ The project requires creating a password locker Python module run from Python cl
 ## BDD
 | Behaviour | Input | Output |
 | ------------ |:----------:| -------: | 
-| Show short codes for navigation | in your cli run run.py| Shows navigation short codes nac lg qt dis |
+| Show short codes for navigation | in your cli run "py run.py"| Shows navigation short codes nac lg qt dis |
 | Display existing users|  dis |  Shows list of existing users | 
 | Exit application|qt |Exits the module |
 | Creating new account | nac| Creates a new account with the parameters:First name,Last name,Email, Password|
