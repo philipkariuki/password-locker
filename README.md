@@ -15,9 +15,23 @@ The project requires creating a password locker Python module run from Python cl
 * As a user, I want to have the option of putting in a password that I want to use for the new credential account instead of having the application generate a password for me.
 * As a user, I also want to view my various account credentials and their passwords in the application.
 ## BDD
+| Behaviour | Input | Output |
+| ------------ |:----------:| -------: | 
+| Show short codes for navigation | in your cli run run.py| Shows navigation short codes nac lg qt dis |
+| Display existing users|  dis |  Shows list of existing users | 
+| Exit application|qt |Exits the module |
+| Creating new account | nac| Creates a new account with the parameters:First name,Last name,Email, Password|
+| Short code for login|lg  |Enter First name:, Enter Password |
+| Create new credential | cac  | Enter Site name:, Enter Account name:, Select yp or gp|
+| Enter an existing password | yp  | User enters an existing password|
+| Generate strong password | gp  | Application generates a strong passowrd|
+| Display existing credentials | dpc  | Shows list of existing credentials for user|
+| Exit credentials management | back  | Exists credentials management menu|
+
 
 ## Setup/Installation Requirements
 * Python 3.6
+
 To clone this repo, open terminal in your desired folder then run:
 
         $ git clone https://github.com/philipkariuki/password-locker/
